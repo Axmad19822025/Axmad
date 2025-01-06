@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>65-maktab | Kitob tumani</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Stil fayli -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            border-bottom: 3px solid #004494;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            background-color: #004494;
+            border-radius: 5px;
+        }
+        main {
+            margin: 20px auto;
+            max-width: 1200px;
+            padding: 10px;
+        }
+        main section {
+            padding: 20px;
+            margin: 20px 0;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        main section h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #0056b3;
+        }
+        main section ul {
+            list-style: square;
+            padding-left: 20px;
+        }
+        main section ul li {
+            margin: 10px 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        form label {
+            font-weight: bold;
+        }
+        form input, form textarea, form button {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kitob tuman 65-umumiy o'rta ta'lim maktabi</h1>
+        
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Bosh sahifa</a></li>
+            <li><a href="#about">Biz haqimizda</a></li>
+            <li><a href="#news">Yangiliklar</a></li>
+            <li><a href="#teachers">Rahbariyat</a></li>
+            <li><a href="#contact">Aloqa</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Bosh sahifa -->
+        <section id="home">
+            <h2>Xush kelibsiz!</h2>
+            <p>Kitob tumani 65-maktab rasmiy veb-saytiga xush kelibsiz! Maktabimiz bilim va tarbiyaga asoslangan yetakchi dargohlardan biridir.</p>
+        </section>
+
+        <!-- Biz haqimizda -->
+        <section id="about">
+            <h2>Biz haqimizda</h2>
+            <p>Maktabimiz tuman markazidan 35 km uzoqlikda joylashgan.</p>
+        </section>
+
+        <!-- Yangiliklar -->
+        <section id="news">
+            <h2>Yangiliklar</h2>
+            <ul>
+                <li><strong>2024 yil 27 dekabrda yangi yil tadbiri o'tkazildi:</strong> </li>
+                
+            </ul>
+        </section>
+
+        <!-- Rahbariyat-->
+        <section id="teachers">
+            <h2>Rahbariyat</h2>
+            <ul>
+                <li>Saidova Ra'no - Maktab direktori</li>
+                <li>Sharapov Saydali - O'IBDO'</li>
+                <li>Homidov Erkin - O'IBDO'</li>
+                <li>Ochilov Saidmurod - MMIBDO'</li>
+                <li>Boqiyev Tolib - MMIBDO'</li>
+                <li>Qayumov Abdullo -CHQBT rahbari</li>
+                <li>Mirboboyeva Charos -Psixolog</li>
+            </ul>
+        </section>
+
+        <!-- Aloqa -->
+        <section id="contact">
+            <h2>Aloqa</h2>
+            <p>Manzil: Kitob tumani Tevaboshi MFY Tuyaboshi qishloq 65-maktab </p>
+            <p>Telefon: +998 (90)427-66-02</p>
+            <form action="/send-message" method="post">
+                <label for="name">Ism:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Xabar:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Jo‘natish</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kitob tumani 65-umumiy o'rta ta'lim maktab. Barcha huquqlar himoyalangan.</p>
+    </footer>
+</body>
+</html>
